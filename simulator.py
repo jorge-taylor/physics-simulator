@@ -52,9 +52,10 @@ pygame.display.set_caption('Physics Simulator')
 clock = pygame.time.Clock()
 
 #fonts used in the simulation (big, medium and small sizes)
-font_b = pygame.font.Font('assets/fonts/secrcode.ttf', 75)
-font_m = pygame.font.Font('assets/fonts/secrcode.ttf', 40)
-font_s = pygame.font.Font('assets/fonts/secrcode.ttf', 20)
+print(pygame.font.get_fonts())
+font_b = pygame.font.SysFont('montserrat', 60)
+font_m = pygame.font.SysFont('montserrat', 30)
+font_s = pygame.font.SysFont('montserrat', 15)
 
 #sub-routine for closing the program
 def exit_sim():
